@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://localhost/bcci%20online%20voting%20system/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI Online Voting System</title>
+</head>
+<body>
+    
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI Online Voting System</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: silver;
+            color: #333;
+        }
+        .navbar {
+            background: maroon;
+            padding: 25px 20px;
+            color: white;
+        }
+
+        .navbar .brand {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .navbar ul li a:hover {
+           color: #ffdf00;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            color: #5e35b1;
+        }
+
+        .banner p {
+            font-size: 18px;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; 
+            color: #333;
+        }
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 100px;
+            background-color: transparent;
+            color: #333;
+            text-align: left;
+            border-bottom: 2px solid #e0b3d8; 
+            margin-top: 10px;
+        }
+        .hero-text a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: maroon;
+        padding: 12px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border: 2px solid maroon;
+        }
+        .hero-text a:hover {
+        background-color: #ffdf00;
+        color: maroon;
+        border-color: #ffdf00;
+        }
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: maroon; 
+        }
+
+        .hero-text span {
+            color: #ffdf00; 
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .hero-text .get-started-btn {
+            margin-top: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #9b59b6; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-text .get-started-btn:hover {
+            background-color: #8e44ad; 
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        .request_form {
+            padding: 60px 100px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .request_form h1.centered {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #9b59b6; 
+        }
+
+        .request_form .adm_int {
+            margin-bottom: 15px;
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .request_form label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .request_form input[type="text"],
+        .request_form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .request_form textarea {
+            height: 150px;
+        }
+
+        .request_form .req_int {
+            margin-top: 25px;
+        }
+
+        .request_form input[type="submit"] {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #9b59b6; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .request_form input[type="submit"]:hover {
+            background-color: #8e44ad; 
+        }
+        @media screen and (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .hero-text p {
+                font-size: 18px;
+            }
+            
+
+            .hero-image img {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .request_form {
+                padding: 40px 20px;
+            }
+
+            .request_form h1.centered {
+                font-size: 28px;
+            }
+
+            .request_form .adm_int {
+                max-width: 100%;
+            }
+
+            .request_form label {
+                font-size: 16px;
+            }
+
+            .request_form input[type="text"],
+            .request_form textarea {
+                font-size: 14px;
+            }
+
+            .request_form input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+
+    <div class="navbar">
+        <div class="brand">BCCI Online Voting System</div>
+        <ul>
+            <li><a href="http://localhost/bcci%20online%20voting%20system/index.php">Home</a></li>
+            <li><a href="http://localhost/bcci%20online%20voting%20system/About.php">About</a></li>
+            <li><a href="http://localhost/bcci%20online%20voting%20system/candidate_path.php">Candidates</a></li>
+        </ul>
+    </div>
+
+
+    
+    <div class="hero-section">
+    <div class="hero-text">
+        <h1>Smart Voting for a Brighter Tomorrow!</h1>
+        <p><a href="http://localhost/bcci%20online%20voting%20system/login.php">VOTE NOW</a></p>
+    </div>
+    <div class="hero-image">
+        <img src="./index_files/ONLINE VOTING COVER.png" alt="School Illustration">
+    </div>
+    </div>
+
+ 
+    
+
+
+</body></html>
